@@ -48,6 +48,18 @@ class Controller extends \Piwik\Plugin\ControllerAdmin
 {
     public function __construct()
     {
+        $config = Config::getInstance();
+
+        if (is_numeric($config->General['installation_first_accessed'])) {
+            $threeDaysAgo = time() - (3 * 24 * 60 * 60);
+
+            if ($config->General['installation_first_accessed'] < $threeDaysAgo) {
+                throw new Exception('This installation has expired, please delete installation_first_accessed from config.ini.php to reset');
+            }
+        } else {
+            $config->General['installation_first_accessed'] = time();
+            $config->forceSave();
+        }
         parent::__construct();
     }
 
