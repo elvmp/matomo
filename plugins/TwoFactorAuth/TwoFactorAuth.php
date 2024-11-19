@@ -53,6 +53,7 @@ class TwoFactorAuth extends \Piwik\Plugin
         $translations[] = 'General_Download';
         $translations[] = 'General_Print';
         $translations[] = 'General_Copy';
+        $translations[] = 'General_Continue';
         $translations[] = 'TwoFactorAuth_SetupBackupRecoveryCodes';
         $translations[] = 'General_Next';
         $translations[] = 'TwoFactorAuth_SetupAuthenticatorOnDeviceStep1';
@@ -62,7 +63,9 @@ class TwoFactorAuth extends \Piwik\Plugin
         $translations[] = 'TwoFactorAuth_AuthenticationCode';
         $translations[] = 'TwoFactorAuth_VerifyAuthCodeHelp';
         $translations[] = 'General_Confirm';
-        $translations[] = 'TwoFactorAuth_SetupAuthenticatorOnDeviceStep2';
+        $translations[] = 'TwoFactorAuth_SetupAuthenticatorOnDeviceStep2QR1';
+        $translations[] = 'TwoFactorAuth_SetupAuthenticatorOnDeviceStep2QR2';
+        $translations[] = 'TwoFactorAuth_ShowQRCode';
         $translations[] = 'TwoFactorAuth_SetupAuthenticatorOnDevice';
         $translations[] = 'TwoFactorAuth_TwoFactorAuthentication';
         $translations[] = 'General_Error';
