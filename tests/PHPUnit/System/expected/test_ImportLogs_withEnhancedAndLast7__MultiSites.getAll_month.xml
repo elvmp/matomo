@@ -34,12 +34,12 @@
 			<periodName>month</periodName>
 			<previousRange>Jul 2012</previousRange>
 			<previous_nb_actions>0</previous_nb_actions>
-			<previous_Actions_nb_pageviews>0</previous_Actions_nb_pageviews>
-			<previous_Actions_hits>0</previous_Actions_hits>
-			<previous_Goal_revenue>0</previous_Goal_revenue>
-			<previous_Goal_nb_conversions>0</previous_Goal_nb_conversions>
-			<previous_Goal_0_nb_conversions>0</previous_Goal_0_nb_conversions>
-			<previous_Goal_0_revenue>0</previous_Goal_0_revenue>
+			<previous_nb_pageviews>0</previous_nb_pageviews>
+			<previous_hits>0</previous_hits>
+			<previous_revenue>0</previous_revenue>
+			<previous_nb_conversions>0</previous_nb_conversions>
+			<previous_orders>0</previous_orders>
+			<previous_ecommerce_revenue>0</previous_ecommerce_revenue>
 			<group />
 			<main_url>http://piwik.net</main_url>
 		</row>
@@ -70,10 +70,10 @@
 			<periodName>month</periodName>
 			<previousRange>Jul 2012</previousRange>
 			<previous_nb_actions>0</previous_nb_actions>
-			<previous_Actions_nb_pageviews>0</previous_Actions_nb_pageviews>
-			<previous_Actions_hits>0</previous_Actions_hits>
-			<previous_Goal_revenue>0</previous_Goal_revenue>
-			<previous_Goal_nb_conversions>0</previous_Goal_nb_conversions>
+			<previous_nb_pageviews>0</previous_nb_pageviews>
+			<previous_hits>0</previous_hits>
+			<previous_revenue>0</previous_revenue>
+			<previous_nb_conversions>0</previous_nb_conversions>
 			<group />
 			<main_url>http://example-site-three.com</main_url>
 		</row>
@@ -104,10 +104,10 @@
 			<periodName>month</periodName>
 			<previousRange>Jul 2012</previousRange>
 			<previous_nb_actions>0</previous_nb_actions>
-			<previous_Actions_nb_pageviews>0</previous_Actions_nb_pageviews>
-			<previous_Actions_hits>0</previous_Actions_hits>
-			<previous_Goal_revenue>0</previous_Goal_revenue>
-			<previous_Goal_nb_conversions>0</previous_Goal_nb_conversions>
+			<previous_nb_pageviews>0</previous_nb_pageviews>
+			<previous_hits>0</previous_hits>
+			<previous_revenue>0</previous_revenue>
+			<previous_nb_conversions>0</previous_nb_conversions>
 			<group />
 			<main_url>http://example-site-two.com</main_url>
 		</row>
@@ -146,12 +146,12 @@
 			<periodName>month</periodName>
 			<previousRange>Aug 2012</previousRange>
 			<previous_nb_actions>51</previous_nb_actions>
-			<previous_Actions_nb_pageviews>45</previous_Actions_nb_pageviews>
-			<previous_Actions_hits>51</previous_Actions_hits>
-			<previous_Goal_revenue>195</previous_Goal_revenue>
-			<previous_Goal_nb_conversions>39</previous_Goal_nb_conversions>
-			<previous_Goal_0_nb_conversions>0</previous_Goal_0_nb_conversions>
-			<previous_Goal_0_revenue>0</previous_Goal_0_revenue>
+			<previous_nb_pageviews>45</previous_nb_pageviews>
+			<previous_hits>51</previous_hits>
+			<previous_revenue>195</previous_revenue>
+			<previous_nb_conversions>39</previous_nb_conversions>
+			<previous_orders>0</previous_orders>
+			<previous_ecommerce_revenue>0</previous_ecommerce_revenue>
 			<group />
 			<main_url>http://piwik.net</main_url>
 		</row>
@@ -182,10 +182,10 @@
 			<periodName>month</periodName>
 			<previousRange>Aug 2012</previousRange>
 			<previous_nb_actions>1</previous_nb_actions>
-			<previous_Actions_nb_pageviews>1</previous_Actions_nb_pageviews>
-			<previous_Actions_hits>1</previous_Actions_hits>
-			<previous_Goal_revenue>0</previous_Goal_revenue>
-			<previous_Goal_nb_conversions>0</previous_Goal_nb_conversions>
+			<previous_nb_pageviews>1</previous_nb_pageviews>
+			<previous_hits>1</previous_hits>
+			<previous_revenue>0</previous_revenue>
+			<previous_nb_conversions>0</previous_nb_conversions>
 			<group />
 			<main_url>http://example-site-two.com</main_url>
 		</row>
@@ -216,10 +216,10 @@
 			<periodName>month</periodName>
 			<previousRange>Aug 2012</previousRange>
 			<previous_nb_actions>5</previous_nb_actions>
-			<previous_Actions_nb_pageviews>5</previous_Actions_nb_pageviews>
-			<previous_Actions_hits>5</previous_Actions_hits>
-			<previous_Goal_revenue>0</previous_Goal_revenue>
-			<previous_Goal_nb_conversions>0</previous_Goal_nb_conversions>
+			<previous_nb_pageviews>5</previous_nb_pageviews>
+			<previous_hits>5</previous_hits>
+			<previous_revenue>0</previous_revenue>
+			<previous_nb_conversions>0</previous_nb_conversions>
 			<group />
 			<main_url>http://example-site-three.com</main_url>
 		</row>
@@ -258,12 +258,12 @@
 			<periodName>month</periodName>
 			<previousRange>Sep 2012</previousRange>
 			<previous_nb_actions>10</previous_nb_actions>
-			<previous_Actions_nb_pageviews>10</previous_Actions_nb_pageviews>
-			<previous_Actions_hits>10</previous_Actions_hits>
-			<previous_Goal_revenue>5</previous_Goal_revenue>
-			<previous_Goal_nb_conversions>1</previous_Goal_nb_conversions>
-			<previous_Goal_0_nb_conversions>0</previous_Goal_0_nb_conversions>
-			<previous_Goal_0_revenue>0</previous_Goal_0_revenue>
+			<previous_nb_pageviews>10</previous_nb_pageviews>
+			<previous_hits>10</previous_hits>
+			<previous_revenue>5</previous_revenue>
+			<previous_nb_conversions>1</previous_nb_conversions>
+			<previous_orders>0</previous_orders>
+			<previous_ecommerce_revenue>0</previous_ecommerce_revenue>
 			<group />
 			<main_url>http://piwik.net</main_url>
 		</row>
@@ -294,10 +294,10 @@
 			<periodName>month</periodName>
 			<previousRange>Sep 2012</previousRange>
 			<previous_nb_actions>0</previous_nb_actions>
-			<previous_Actions_nb_pageviews>0</previous_Actions_nb_pageviews>
-			<previous_Actions_hits>0</previous_Actions_hits>
-			<previous_Goal_revenue>0</previous_Goal_revenue>
-			<previous_Goal_nb_conversions>0</previous_Goal_nb_conversions>
+			<previous_nb_pageviews>0</previous_nb_pageviews>
+			<previous_hits>0</previous_hits>
+			<previous_revenue>0</previous_revenue>
+			<previous_nb_conversions>0</previous_nb_conversions>
 			<group />
 			<main_url>http://example-site-two.com</main_url>
 		</row>
@@ -328,10 +328,10 @@
 			<periodName>month</periodName>
 			<previousRange>Sep 2012</previousRange>
 			<previous_nb_actions>0</previous_nb_actions>
-			<previous_Actions_nb_pageviews>0</previous_Actions_nb_pageviews>
-			<previous_Actions_hits>0</previous_Actions_hits>
-			<previous_Goal_revenue>0</previous_Goal_revenue>
-			<previous_Goal_nb_conversions>0</previous_Goal_nb_conversions>
+			<previous_nb_pageviews>0</previous_nb_pageviews>
+			<previous_hits>0</previous_hits>
+			<previous_revenue>0</previous_revenue>
+			<previous_nb_conversions>0</previous_nb_conversions>
 			<group />
 			<main_url>http://example-site-three.com</main_url>
 		</row>
@@ -370,12 +370,12 @@
 			<periodName>month</periodName>
 			<previousRange>Oct 2012</previousRange>
 			<previous_nb_actions>0</previous_nb_actions>
-			<previous_Actions_nb_pageviews>0</previous_Actions_nb_pageviews>
-			<previous_Actions_hits>0</previous_Actions_hits>
-			<previous_Goal_revenue>0</previous_Goal_revenue>
-			<previous_Goal_nb_conversions>0</previous_Goal_nb_conversions>
-			<previous_Goal_0_nb_conversions>0</previous_Goal_0_nb_conversions>
-			<previous_Goal_0_revenue>0</previous_Goal_0_revenue>
+			<previous_nb_pageviews>0</previous_nb_pageviews>
+			<previous_hits>0</previous_hits>
+			<previous_revenue>0</previous_revenue>
+			<previous_nb_conversions>0</previous_nb_conversions>
+			<previous_orders>0</previous_orders>
+			<previous_ecommerce_revenue>0</previous_ecommerce_revenue>
 			<group />
 			<main_url>http://piwik.net</main_url>
 		</row>
@@ -406,10 +406,10 @@
 			<periodName>month</periodName>
 			<previousRange>Oct 2012</previousRange>
 			<previous_nb_actions>0</previous_nb_actions>
-			<previous_Actions_nb_pageviews>0</previous_Actions_nb_pageviews>
-			<previous_Actions_hits>0</previous_Actions_hits>
-			<previous_Goal_revenue>0</previous_Goal_revenue>
-			<previous_Goal_nb_conversions>0</previous_Goal_nb_conversions>
+			<previous_nb_pageviews>0</previous_nb_pageviews>
+			<previous_hits>0</previous_hits>
+			<previous_revenue>0</previous_revenue>
+			<previous_nb_conversions>0</previous_nb_conversions>
 			<group />
 			<main_url>http://example-site-two.com</main_url>
 		</row>
@@ -440,10 +440,10 @@
 			<periodName>month</periodName>
 			<previousRange>Oct 2012</previousRange>
 			<previous_nb_actions>0</previous_nb_actions>
-			<previous_Actions_nb_pageviews>0</previous_Actions_nb_pageviews>
-			<previous_Actions_hits>0</previous_Actions_hits>
-			<previous_Goal_revenue>0</previous_Goal_revenue>
-			<previous_Goal_nb_conversions>0</previous_Goal_nb_conversions>
+			<previous_nb_pageviews>0</previous_nb_pageviews>
+			<previous_hits>0</previous_hits>
+			<previous_revenue>0</previous_revenue>
+			<previous_nb_conversions>0</previous_nb_conversions>
 			<group />
 			<main_url>http://example-site-three.com</main_url>
 		</row>
@@ -482,12 +482,12 @@
 			<periodName>month</periodName>
 			<previousRange>Nov 2012</previousRange>
 			<previous_nb_actions>0</previous_nb_actions>
-			<previous_Actions_nb_pageviews>0</previous_Actions_nb_pageviews>
-			<previous_Actions_hits>0</previous_Actions_hits>
-			<previous_Goal_revenue>0</previous_Goal_revenue>
-			<previous_Goal_nb_conversions>0</previous_Goal_nb_conversions>
-			<previous_Goal_0_nb_conversions>0</previous_Goal_0_nb_conversions>
-			<previous_Goal_0_revenue>0</previous_Goal_0_revenue>
+			<previous_nb_pageviews>0</previous_nb_pageviews>
+			<previous_hits>0</previous_hits>
+			<previous_revenue>0</previous_revenue>
+			<previous_nb_conversions>0</previous_nb_conversions>
+			<previous_orders>0</previous_orders>
+			<previous_ecommerce_revenue>0</previous_ecommerce_revenue>
 			<group />
 			<main_url>http://piwik.net</main_url>
 		</row>
@@ -518,10 +518,10 @@
 			<periodName>month</periodName>
 			<previousRange>Nov 2012</previousRange>
 			<previous_nb_actions>0</previous_nb_actions>
-			<previous_Actions_nb_pageviews>0</previous_Actions_nb_pageviews>
-			<previous_Actions_hits>0</previous_Actions_hits>
-			<previous_Goal_revenue>0</previous_Goal_revenue>
-			<previous_Goal_nb_conversions>0</previous_Goal_nb_conversions>
+			<previous_nb_pageviews>0</previous_nb_pageviews>
+			<previous_hits>0</previous_hits>
+			<previous_revenue>0</previous_revenue>
+			<previous_nb_conversions>0</previous_nb_conversions>
 			<group />
 			<main_url>http://example-site-two.com</main_url>
 		</row>
@@ -552,10 +552,10 @@
 			<periodName>month</periodName>
 			<previousRange>Nov 2012</previousRange>
 			<previous_nb_actions>0</previous_nb_actions>
-			<previous_Actions_nb_pageviews>0</previous_Actions_nb_pageviews>
-			<previous_Actions_hits>0</previous_Actions_hits>
-			<previous_Goal_revenue>0</previous_Goal_revenue>
-			<previous_Goal_nb_conversions>0</previous_Goal_nb_conversions>
+			<previous_nb_pageviews>0</previous_nb_pageviews>
+			<previous_hits>0</previous_hits>
+			<previous_revenue>0</previous_revenue>
+			<previous_nb_conversions>0</previous_nb_conversions>
 			<group />
 			<main_url>http://example-site-three.com</main_url>
 		</row>
@@ -594,12 +594,12 @@
 			<periodName>month</periodName>
 			<previousRange>Dec 2012</previousRange>
 			<previous_nb_actions>0</previous_nb_actions>
-			<previous_Actions_nb_pageviews>0</previous_Actions_nb_pageviews>
-			<previous_Actions_hits>0</previous_Actions_hits>
-			<previous_Goal_revenue>0</previous_Goal_revenue>
-			<previous_Goal_nb_conversions>0</previous_Goal_nb_conversions>
-			<previous_Goal_0_nb_conversions>0</previous_Goal_0_nb_conversions>
-			<previous_Goal_0_revenue>0</previous_Goal_0_revenue>
+			<previous_nb_pageviews>0</previous_nb_pageviews>
+			<previous_hits>0</previous_hits>
+			<previous_revenue>0</previous_revenue>
+			<previous_nb_conversions>0</previous_nb_conversions>
+			<previous_orders>0</previous_orders>
+			<previous_ecommerce_revenue>0</previous_ecommerce_revenue>
 			<group />
 			<main_url>http://piwik.net</main_url>
 		</row>
@@ -630,10 +630,10 @@
 			<periodName>month</periodName>
 			<previousRange>Dec 2012</previousRange>
 			<previous_nb_actions>0</previous_nb_actions>
-			<previous_Actions_nb_pageviews>0</previous_Actions_nb_pageviews>
-			<previous_Actions_hits>0</previous_Actions_hits>
-			<previous_Goal_revenue>0</previous_Goal_revenue>
-			<previous_Goal_nb_conversions>0</previous_Goal_nb_conversions>
+			<previous_nb_pageviews>0</previous_nb_pageviews>
+			<previous_hits>0</previous_hits>
+			<previous_revenue>0</previous_revenue>
+			<previous_nb_conversions>0</previous_nb_conversions>
 			<group />
 			<main_url>http://example-site-two.com</main_url>
 		</row>
@@ -664,10 +664,10 @@
 			<periodName>month</periodName>
 			<previousRange>Dec 2012</previousRange>
 			<previous_nb_actions>0</previous_nb_actions>
-			<previous_Actions_nb_pageviews>0</previous_Actions_nb_pageviews>
-			<previous_Actions_hits>0</previous_Actions_hits>
-			<previous_Goal_revenue>0</previous_Goal_revenue>
-			<previous_Goal_nb_conversions>0</previous_Goal_nb_conversions>
+			<previous_nb_pageviews>0</previous_nb_pageviews>
+			<previous_hits>0</previous_hits>
+			<previous_revenue>0</previous_revenue>
+			<previous_nb_conversions>0</previous_nb_conversions>
 			<group />
 			<main_url>http://example-site-three.com</main_url>
 		</row>
@@ -706,12 +706,12 @@
 			<periodName>month</periodName>
 			<previousRange>Jan 2013</previousRange>
 			<previous_nb_actions>0</previous_nb_actions>
-			<previous_Actions_nb_pageviews>0</previous_Actions_nb_pageviews>
-			<previous_Actions_hits>0</previous_Actions_hits>
-			<previous_Goal_revenue>0</previous_Goal_revenue>
-			<previous_Goal_nb_conversions>0</previous_Goal_nb_conversions>
-			<previous_Goal_0_nb_conversions>0</previous_Goal_0_nb_conversions>
-			<previous_Goal_0_revenue>0</previous_Goal_0_revenue>
+			<previous_nb_pageviews>0</previous_nb_pageviews>
+			<previous_hits>0</previous_hits>
+			<previous_revenue>0</previous_revenue>
+			<previous_nb_conversions>0</previous_nb_conversions>
+			<previous_orders>0</previous_orders>
+			<previous_ecommerce_revenue>0</previous_ecommerce_revenue>
 			<group />
 			<main_url>http://piwik.net</main_url>
 		</row>
@@ -742,10 +742,10 @@
 			<periodName>month</periodName>
 			<previousRange>Jan 2013</previousRange>
 			<previous_nb_actions>0</previous_nb_actions>
-			<previous_Actions_nb_pageviews>0</previous_Actions_nb_pageviews>
-			<previous_Actions_hits>0</previous_Actions_hits>
-			<previous_Goal_revenue>0</previous_Goal_revenue>
-			<previous_Goal_nb_conversions>0</previous_Goal_nb_conversions>
+			<previous_nb_pageviews>0</previous_nb_pageviews>
+			<previous_hits>0</previous_hits>
+			<previous_revenue>0</previous_revenue>
+			<previous_nb_conversions>0</previous_nb_conversions>
 			<group />
 			<main_url>http://example-site-two.com</main_url>
 		</row>
@@ -776,10 +776,10 @@
 			<periodName>month</periodName>
 			<previousRange>Jan 2013</previousRange>
 			<previous_nb_actions>0</previous_nb_actions>
-			<previous_Actions_nb_pageviews>0</previous_Actions_nb_pageviews>
-			<previous_Actions_hits>0</previous_Actions_hits>
-			<previous_Goal_revenue>0</previous_Goal_revenue>
-			<previous_Goal_nb_conversions>0</previous_Goal_nb_conversions>
+			<previous_nb_pageviews>0</previous_nb_pageviews>
+			<previous_hits>0</previous_hits>
+			<previous_revenue>0</previous_revenue>
+			<previous_nb_conversions>0</previous_nb_conversions>
 			<group />
 			<main_url>http://example-site-three.com</main_url>
 		</row>

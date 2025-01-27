@@ -14,6 +14,7 @@ import {
   AjaxHelper,
   translate,
   Site,
+  NumberFormatter,
 } from 'CoreHome';
 
 interface SiteWithMetrics extends Site {
@@ -29,9 +30,9 @@ interface SiteWithMetrics extends Site {
   visits_evolution: string;
   ratio?: number|string;
   previous_nb_visits?: string|number;
-  previous_Actions_nb_pageviews?: string|number;
-  previous_Actions_hits?: string|number;
-  previous_Goal_revenue?: string|number;
+  previous_nb_pageviews?: string|number;
+  previous_hits?: string|number;
+  previous_revenue?: string|number;
   currencySymbol: string;
   periodName: string;
   previousRange: string;
@@ -43,8 +44,8 @@ interface SiteTotals {
   nb_pageviews: string|number;
   hits: string|number;
   nb_visits: string|number;
-  nb_visits_lastdate: string|number;
   revenue: string|number;
+  previous_nb_visits: string|number;
 }
 
 interface DashboardStoreState {
@@ -74,8 +75,6 @@ interface GetAllWithGroupsResponse {
   sites: SiteWithMetrics[];
   totals: SiteTotals;
 }
-
-const { NumberFormatter } = window;
 
 class DashboardStore {
   private privateState = reactive<DashboardStoreState>({
@@ -157,7 +156,7 @@ class DashboardStore {
         if (this.state.value.sortColumn === 'nb_visits'
           || this.state.value.sortColumn === 'visits_evolution'
         ) {
-          previousTotal = NumberFormatter.formatNumber(site.previous_nb_visits);
+          previousTotal = NumberFormatter.formatNumber(site.previous_nb_visits! as string);
           currentTotal = NumberFormatter.formatNumber(site.nb_visits);
           evolution = NumberFormatter.formatPercent(site.visits_evolution);
           metricName = translate('General_ColumnNbVisits');
@@ -168,37 +167,37 @@ class DashboardStore {
         }
 
         if (this.state.value.sortColumn === 'pageviews_evolution') {
-          previousTotal = `${site.previous_Actions_nb_pageviews}`;
+          previousTotal = `${site.previous_nb_pageviews}`;
           currentTotal = `${site.nb_pageviews}`;
           evolution = NumberFormatter.formatPercent(site.pageviews_evolution);
           metricName = translate('General_ColumnPageviews');
           previousTotalAdjusted = NumberFormatter.formatNumber(
-            Math.round(parseInt(site.previous_Actions_nb_pageviews as string, 10)
+            Math.round(parseInt(site.previous_nb_pageviews as string, 10)
               * parseInt(site.ratio as string, 10)),
           );
         }
 
         if (this.state.value.sortColumn === 'hits_evolution') {
-          previousTotal = `${site.previous_Actions_hits}`;
+          previousTotal = `${site.previous_hits}`;
           currentTotal = `${site.hits}`;
           evolution = NumberFormatter.formatPercent(site.hits_evolution);
           metricName = translate('General_ColumnHits');
           previousTotalAdjusted = NumberFormatter.formatNumber(
-            Math.round(parseInt(site.previous_Actions_hits as string, 10)
+            Math.round(parseInt(site.previous_hits as string, 10)
               * parseInt(site.ratio as string, 10)),
           );
         }
 
         if (this.state.value.sortColumn === 'revenue_evolution') {
           previousTotal = NumberFormatter.formatCurrency(
-            site.previous_Goal_revenue,
+            site.previous_revenue! as string,
             site.currencySymbol,
           );
           currentTotal = NumberFormatter.formatCurrency(site.revenue, site.currencySymbol);
           evolution = NumberFormatter.formatPercent(site.revenue_evolution);
           metricName = translate('General_ColumnRevenue');
           previousTotalAdjusted = NumberFormatter.formatCurrency(
-            Math.round(parseInt(site.previous_Goal_revenue as string, 10)
+            Math.round(parseInt(site.previous_revenue as string, 10)
               * parseInt(site.ratio as string, 10)),
             site.currencySymbol,
           );
@@ -264,7 +263,7 @@ class DashboardStore {
     this.privateState.totalHits = report.totals.hits;
     this.privateState.totalActions = report.totals.nb_actions;
     this.privateState.totalRevenue = report.totals.revenue;
-    this.privateState.lastVisits = report.totals.nb_visits_lastdate;
+    this.privateState.lastVisits = report.totals.previous_nb_visits;
     this.privateState.sites = allSites;
     this.privateState.numberOfSites = report.numSites;
     this.privateState.lastVisitsDate = report.lastDate;

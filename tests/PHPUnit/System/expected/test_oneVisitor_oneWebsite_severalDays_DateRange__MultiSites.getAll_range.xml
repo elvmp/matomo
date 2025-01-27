@@ -24,9 +24,9 @@
 		<periodName>range</periodName>
 		<previousRange>Nov 13 – Dec 14, 2010</previousRange>
 		<previous_nb_actions>3</previous_nb_actions>
-		<previous_Actions_nb_pageviews>3</previous_Actions_nb_pageviews>
-		<previous_Actions_hits>3</previous_Actions_hits>
-		<previous_Goal_revenue>0</previous_Goal_revenue>
+		<previous_nb_pageviews>3</previous_nb_pageviews>
+		<previous_hits>3</previous_hits>
+		<previous_revenue>0</previous_revenue>
 		<group />
 		<main_url>http://piwik.net</main_url>
 	</row>
@@ -54,9 +54,9 @@
 		<periodName>range</periodName>
 		<previousRange>Nov 13 – Dec 14, 2010</previousRange>
 		<previous_nb_actions>1</previous_nb_actions>
-		<previous_Actions_nb_pageviews>1</previous_Actions_nb_pageviews>
-		<previous_Actions_hits>1</previous_Actions_hits>
-		<previous_Goal_revenue>0</previous_Goal_revenue>
+		<previous_nb_pageviews>1</previous_nb_pageviews>
+		<previous_hits>1</previous_hits>
+		<previous_revenue>0</previous_revenue>
 		<group />
 		<main_url>http://piwik.net</main_url>
 	</row>

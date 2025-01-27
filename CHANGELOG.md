@@ -4,7 +4,22 @@ This is the Developer Changelog for Matomo platform developers. All changes in o
 
 The Product Changelog at **[matomo.org/changelog](https://matomo.org/changelog)** lets you see more details about any Matomo release, such as the list of new guides and FAQs, security fixes, and links to all closed issues. 
 
+## Matomo 5.3.0
+
+### Breaking Changes
+
+* When requesting goals for multiple sites at once using `Goals.getGoals`, the result will no longer be indexed by `idgoal`. Requesting the goals for a single site will still return them indexed by `idgoal`.
+
 ## Matomo 5.2.0
+
+### Breaking Changes
+
+* The MultiSites API has been reworked. The previously incorrectly named metrics for the previous period now have correct names:
+    * `previous_Actions_nb_pageviews` => `previous_nb_pageviews`
+    * `previous_Goal_revenue` => `previous_revenue`
+    * `previous_Goal_nb_conversions` => `previous_nb_conversions`
+    * `previous_Goal_0_nb_conversions` => `previous_orders`
+    * `previous_Goal_0_revenue` => `previous_ecommerce_revenue`
 
 ## Deprecations
 

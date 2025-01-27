@@ -25,9 +25,9 @@
 			<periodName>month</periodName>
 			<previousRange>Dec 2009</previousRange>
 			<previous_nb_actions>0</previous_nb_actions>
-			<previous_Actions_nb_pageviews>0</previous_Actions_nb_pageviews>
-			<previous_Actions_hits>0</previous_Actions_hits>
-			<previous_Goal_revenue>0</previous_Goal_revenue>
+			<previous_nb_pageviews>0</previous_nb_pageviews>
+			<previous_hits>0</previous_hits>
+			<previous_revenue>0</previous_revenue>
 			<group />
 			<main_url>http://piwik.net</main_url>
 		</row>
@@ -55,9 +55,9 @@
 			<periodName>month</periodName>
 			<previousRange>Dec 2009</previousRange>
 			<previous_nb_actions>0</previous_nb_actions>
-			<previous_Actions_nb_pageviews>0</previous_Actions_nb_pageviews>
-			<previous_Actions_hits>0</previous_Actions_hits>
-			<previous_Goal_revenue>0</previous_Goal_revenue>
+			<previous_nb_pageviews>0</previous_nb_pageviews>
+			<previous_hits>0</previous_hits>
+			<previous_revenue>0</previous_revenue>
 			<group />
 			<main_url>http://piwik.net</main_url>
 		</row>

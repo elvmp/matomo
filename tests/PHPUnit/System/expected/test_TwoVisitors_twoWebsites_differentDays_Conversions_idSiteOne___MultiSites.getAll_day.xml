@@ -25,9 +25,9 @@
 			<periodName>day</periodName>
 			<previousRange>Sat, Jan 2</previousRange>
 			<previous_nb_actions>0</previous_nb_actions>
-			<previous_Actions_nb_pageviews>0</previous_Actions_nb_pageviews>
-			<previous_Actions_hits>0</previous_Actions_hits>
-			<previous_Goal_revenue>0</previous_Goal_revenue>
+			<previous_nb_pageviews>0</previous_nb_pageviews>
+			<previous_hits>0</previous_hits>
+			<previous_revenue>0</previous_revenue>
 			<group />
 			<main_url>http://piwik.net</main_url>
 		</row>
@@ -57,9 +57,9 @@
 			<periodName>day</periodName>
 			<previousRange>Sun, Jan 3</previousRange>
 			<previous_nb_actions>2</previous_nb_actions>
-			<previous_Actions_nb_pageviews>2</previous_Actions_nb_pageviews>
-			<previous_Actions_hits>2</previous_Actions_hits>
-			<previous_Goal_revenue>10</previous_Goal_revenue>
+			<previous_nb_pageviews>2</previous_nb_pageviews>
+			<previous_hits>2</previous_hits>
+			<previous_revenue>10</previous_revenue>
 			<group />
 			<main_url>http://piwik.net</main_url>
 		</row>
@@ -87,9 +87,9 @@
 			<periodName>day</periodName>
 			<previousRange>Sun, Jan 3</previousRange>
 			<previous_nb_actions>0</previous_nb_actions>
-			<previous_Actions_nb_pageviews>0</previous_Actions_nb_pageviews>
-			<previous_Actions_hits>0</previous_Actions_hits>
-			<previous_Goal_revenue>0</previous_Goal_revenue>
+			<previous_nb_pageviews>0</previous_nb_pageviews>
+			<previous_hits>0</previous_hits>
+			<previous_revenue>0</previous_revenue>
 			<group />
 			<main_url>http://piwik.net</main_url>
 		</row>
@@ -119,9 +119,9 @@
 			<periodName>day</periodName>
 			<previousRange>Mon, Jan 4</previousRange>
 			<previous_nb_actions>1</previous_nb_actions>
-			<previous_Actions_nb_pageviews>1</previous_Actions_nb_pageviews>
-			<previous_Actions_hits>1</previous_Actions_hits>
-			<previous_Goal_revenue>0</previous_Goal_revenue>
+			<previous_nb_pageviews>1</previous_nb_pageviews>
+			<previous_hits>1</previous_hits>
+			<previous_revenue>0</previous_revenue>
 			<group />
 			<main_url>http://piwik.net</main_url>
 		</row>
@@ -151,9 +151,9 @@
 			<periodName>day</periodName>
 			<previousRange>Tue, Jan 5</previousRange>
 			<previous_nb_actions>5</previous_nb_actions>
-			<previous_Actions_nb_pageviews>5</previous_Actions_nb_pageviews>
-			<previous_Actions_hits>5</previous_Actions_hits>
-			<previous_Goal_revenue>5</previous_Goal_revenue>
+			<previous_nb_pageviews>5</previous_nb_pageviews>
+			<previous_hits>5</previous_hits>
+			<previous_revenue>5</previous_revenue>
 			<group />
 			<main_url>http://piwik.net</main_url>
 		</row>
@@ -183,9 +183,9 @@
 			<periodName>day</periodName>
 			<previousRange>Wed, Jan 6</previousRange>
 			<previous_nb_actions>5</previous_nb_actions>
-			<previous_Actions_nb_pageviews>5</previous_Actions_nb_pageviews>
-			<previous_Actions_hits>5</previous_Actions_hits>
-			<previous_Goal_revenue>5</previous_Goal_revenue>
+			<previous_nb_pageviews>5</previous_nb_pageviews>
+			<previous_hits>5</previous_hits>
+			<previous_revenue>5</previous_revenue>
 			<group />
 			<main_url>http://piwik.net</main_url>
 		</row>
@@ -215,9 +215,9 @@
 			<periodName>day</periodName>
 			<previousRange>Thu, Jan 7</previousRange>
 			<previous_nb_actions>5</previous_nb_actions>
-			<previous_Actions_nb_pageviews>5</previous_Actions_nb_pageviews>
-			<previous_Actions_hits>5</previous_Actions_hits>
-			<previous_Goal_revenue>5</previous_Goal_revenue>
+			<previous_nb_pageviews>5</previous_nb_pageviews>
+			<previous_hits>5</previous_hits>
+			<previous_revenue>5</previous_revenue>
 			<group />
 			<main_url>http://piwik.net</main_url>
 		</row>
@@ -247,9 +247,9 @@
 			<periodName>day</periodName>
 			<previousRange>Fri, Jan 8</previousRange>
 			<previous_nb_actions>5</previous_nb_actions>
-			<previous_Actions_nb_pageviews>5</previous_Actions_nb_pageviews>
-			<previous_Actions_hits>5</previous_Actions_hits>
-			<previous_Goal_revenue>5</previous_Goal_revenue>
+			<previous_nb_pageviews>5</previous_nb_pageviews>
+			<previous_hits>5</previous_hits>
+			<previous_revenue>5</previous_revenue>
 			<group />
 			<main_url>http://piwik.net</main_url>
 		</row>

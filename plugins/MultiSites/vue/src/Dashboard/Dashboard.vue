@@ -288,8 +288,8 @@ import {
   EnrichedHeadline,
   ActivityIndicator,
   MatomoUrl,
-  getFormattedEvolution,
   externalRawLink,
+  NumberFormatter,
 } from 'CoreHome';
 import MultisitesSite from '../MultisitesSite/MultisitesSite.vue';
 import DashboardStore from './Dashboard.store';
@@ -385,7 +385,10 @@ export default defineComponent({
         this.date,
         `${state.lastVisits}`,
         state.lastVisitsDate,
-        getFormattedEvolution(state.totalVisits, state.lastVisits),
+        NumberFormatter.calculateAndFormatEvolution(
+          NumberFormatter.parseFormattedNumber(state.totalVisits as string),
+          NumberFormatter.parseFormattedNumber(state.lastVisits as string),
+        ),
       );
     },
     loadingMessage() {
