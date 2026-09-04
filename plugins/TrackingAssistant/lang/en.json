@@ -1,0 +1,8 @@
+{
+  "TrackingAssistant": "Tracking Assistant",
+  "Overview": "Overview",
+  "NewDiagnostic": "New diagnostic",
+  "StartDiagnostic": "Start diagnostic",
+  "NoDiagnostics": "No diagnostics have been started for this website yet.",
+  "FoundationNotice": "Browser diagnostics run asynchronously in an isolated Playwright worker. Validated low-risk Tag Manager fixes can be applied to the draft only after explicit approval; live publishing is not implemented."
+}

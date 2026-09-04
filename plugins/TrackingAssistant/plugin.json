@@ -1,0 +1,8 @@
+{
+  "name": "TrackingAssistant",
+  "version": "0.1.0",
+  "description": "Reproduce, diagnose and safely validate Matomo tracking fixes.",
+  "require": {
+    "matomo": ">=5.10.0,<6.0.0-b1"
+  }
+}
