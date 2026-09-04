@@ -45,17 +45,11 @@ class API extends \Piwik\Plugin\API
 
         $idContainer = trim((string) $idContainer);
         if ($idContainer !== '') {
-            // Native Tag Manager read permission is intentionally checked in the user's web request.
-            // The async worker receives no Matomo credentials and only continues this authorised read.
             (new TagManagerAdapter())->getContainer($idSite, $idContainer);
         }
 
-        $urlPolicy = new UrlPolicy($settings);
-        $urlPolicy->assertAllowedForSite($idSite, (string) $targetUrl);
-
-        $scenario = $this->normaliseArrayInput($scenario, 'scenario');
-        $scenarioValidator = new ScenarioValidator();
-        $scenario = $scenarioValidator->validate($scenario);
+        (new UrlPolicy($settings))->assertAllowedForSite($idSite, (string) $targetUrl);
+        $scenario = (new ScenarioValidator())->validate($this->normaliseArrayInput($scenario, 'scenario'));
 
         $redaction = new RedactionService();
         $runs = new RunsDao();
@@ -85,7 +79,7 @@ class API extends \Piwik\Plugin\API
     public function getDiagnostic($idRun)
     {
         $run = $this->requireRun((int) $idRun);
-        Piwik::checkUserHasViewAccess((int) $run['idsite']);
+        Piwik::checkUserHasCapability((int) $run['idsite'], RunTrackingDiagnostics::ID);
         return $this->presentRun($run);
     }
 
@@ -94,40 +88,30 @@ class API extends \Piwik\Plugin\API
         $this->requirePost();
         $run = $this->requireRun((int) $idRun);
         Piwik::checkUserHasCapability((int) $run['idsite'], RunTrackingDiagnostics::ID);
-
         $cancelled = (new RunsDao())->cancel((int) $idRun);
         if ($cancelled) {
-            (new AuditDao())->record(
-                (int) $idRun,
-                null,
-                (string) Piwik::getCurrentUserLogin(),
-                'diagnostic_cancelled'
-            );
+            (new AuditDao())->record((int) $idRun, null, (string) Piwik::getCurrentUserLogin(), 'diagnostic_cancelled');
         }
-
         return ['cancelled' => $cancelled];
     }
 
     public function getRuns($idSite, $limit = 50)
     {
         $idSite = (int) $idSite;
-        Piwik::checkUserHasViewAccess($idSite);
-
+        Piwik::checkUserHasCapability($idSite, RunTrackingDiagnostics::ID);
         return array_map([$this, 'presentRun'], (new RunsDao())->getForSite($idSite, (int) $limit));
     }
 
     public function getFindings($idRun)
     {
         $run = $this->requireRun((int) $idRun);
-        Piwik::checkUserHasViewAccess((int) $run['idsite']);
+        Piwik::checkUserHasCapability((int) $run['idsite'], RunTrackingDiagnostics::ID);
         $this->assertCanViewSelectedContainer($run);
-
         $findings = (new FindingsDao())->getForRun((int) $idRun);
         foreach ($findings as &$finding) {
             $finding = $this->presentFinding($finding);
         }
         unset($finding);
-
         return $findings;
     }
 
@@ -142,9 +126,7 @@ class API extends \Piwik\Plugin\API
         $run = $this->requireRun((int) $finding['idrun']);
         Piwik::checkUserHasCapability((int) $run['idsite'], RunTrackingDiagnostics::ID);
         $this->assertCanViewSelectedContainer($run);
-
-        $presentedFinding = $this->presentFinding($finding);
-        $idProposal = (new ProposalService())->createFromFinding($run, (int) $idFinding, $presentedFinding);
+        $idProposal = (new ProposalService())->createFromFinding($run, (int) $idFinding, $this->presentFinding($finding));
         if (!$idProposal) {
             throw new \RuntimeException('This finding does not contain a safe Tag Manager proposal.');
         }
@@ -154,9 +136,8 @@ class API extends \Piwik\Plugin\API
     public function getProposals($idRun)
     {
         $run = $this->requireRun((int) $idRun);
-        Piwik::checkUserHasViewAccess((int) $run['idsite']);
+        Piwik::checkUserHasCapability((int) $run['idsite'], RunTrackingDiagnostics::ID);
         $this->assertCanViewSelectedContainer($run);
-
         $result = [];
         foreach ((new ProposalsDao())->getForRun((int) $idRun) as $proposal) {
             $result[] = $this->presentProposal($proposal);
@@ -167,7 +148,7 @@ class API extends \Piwik\Plugin\API
     public function getProposal($idProposal)
     {
         $proposal = $this->requireProposal((int) $idProposal);
-        Piwik::checkUserHasViewAccess((int) $proposal['idsite']);
+        Piwik::checkUserHasCapability((int) $proposal['idsite'], RunTrackingDiagnostics::ID);
         (new TagManagerAdapter())->getContainer((int) $proposal['idsite'], (string) $proposal['idcontainer']);
         return $this->presentProposal($proposal);
     }
@@ -178,9 +159,7 @@ class API extends \Piwik\Plugin\API
         $proposal = $this->requireProposal((int) $idProposal);
         Piwik::checkUserHasCapability((int) $proposal['idsite'], RunTrackingDiagnostics::ID);
         (new TagManagerAdapter())->getContainer((int) $proposal['idsite'], (string) $proposal['idcontainer']);
-
-        $login = (string) Piwik::getCurrentUserLogin();
-        if (!(new ProposalService())->approve($proposal, $login)) {
+        if (!(new ProposalService())->approve($proposal, (string) Piwik::getCurrentUserLogin())) {
             throw new \RuntimeException('Only a ready proposal can be approved.');
         }
         return $this->presentProposal($this->requireProposal((int) $idProposal));
@@ -192,9 +171,7 @@ class API extends \Piwik\Plugin\API
         $proposal = $this->requireProposal((int) $idProposal);
         Piwik::checkUserHasCapability((int) $proposal['idsite'], RunTrackingDiagnostics::ID);
         (new TagManagerAdapter())->getContainer((int) $proposal['idsite'], (string) $proposal['idcontainer']);
-
-        $login = (string) Piwik::getCurrentUserLogin();
-        if (!(new ProposalService())->dismiss($proposal, $login)) {
+        if (!(new ProposalService())->dismiss($proposal, (string) Piwik::getCurrentUserLogin())) {
             throw new \RuntimeException('Only a draft or ready proposal can be dismissed.');
         }
         return $this->presentProposal($this->requireProposal((int) $idProposal));
@@ -205,9 +182,6 @@ class API extends \Piwik\Plugin\API
         $this->requirePost();
         $proposal = $this->requireProposal((int) $idProposal);
         Piwik::checkUserHasCapability((int) $proposal['idsite'], RunTrackingDiagnostics::ID);
-
-        // ProposalService validates optimistic concurrency and calls native MTM mutation APIs.
-        // Those native APIs enforce tagmanager_write in the current user's request context.
         $result = (new ProposalService())->apply($proposal, (string) Piwik::getCurrentUserLogin());
         return [
             'proposal' => $this->presentProposal($this->requireProposal((int) $idProposal)),
@@ -251,7 +225,6 @@ class API extends \Piwik\Plugin\API
         if (!$run) {
             return [];
         }
-
         return [
             'idRun' => (int) $run['idrun'],
             'idSite' => (int) $run['idsite'],
@@ -295,7 +268,6 @@ class API extends \Piwik\Plugin\API
                 'status' => $operation['status'],
             ];
         }
-
         return [
             'idProposal' => (int) $proposal['idproposal'],
             'idRun' => (int) $proposal['idrun'],
@@ -352,7 +324,6 @@ class API extends \Piwik\Plugin\API
         if (!is_string($json) || $json === '') {
             return $default;
         }
-
         $decoded = json_decode($json, true);
         return json_last_error() === JSON_ERROR_NONE ? $decoded : $default;
     }
